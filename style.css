@@ -1,0 +1,55 @@
+/* Write CSS Here 
+
+Main Navigatino Height: 60px
+Green Color: #31a31d
+
+*/
+.wrapper {
+    min-height: 200px;
+    font-family: sans-serif;
+    font-size: 15px;
+  }
+  
+  ul.elementor-nav-menu {
+      background: #31a31d;
+      color: #fff;
+      list-style: none;
+      height: 60px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+  }
+  
+  ul.elementor-nav-menu li ul {
+      display: inline-block;
+      position: relative;
+  }
+  
+  ul.elementor-nav-menu li ul.submenu li.menu-item {
+      display: inline-block;
+      position: relative;
+  }
+  
+  ul.elementor-nav-menu li a {
+      display: block;
+      padding: 5px;
+      text-decoration: none;
+      color: inherit;
+  }
+  
+  ul li ul.sub-menu li {
+      display: block;
+      padding: 5px;
+  }
+  
+  ul li ul.sub-menu {
+      background: #31a31d;
+      position: absolute;
+      z-index: 444;
+      display: none;
+      padding: 5px 40px 10px 5px;
+  }
+  
+  ul li:hover ul.sub-menu  {
+      display: block;
+  }
